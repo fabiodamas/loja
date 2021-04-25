@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>2.4.5</version>
+		<relativePath/> <!-- lookup parent from repository -->
+	</parent>
+	<groupId>br.com.fabio</groupId>
+	<artifactId>shopping-api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>shopping-api</name>
+	<description>Demo project for Spring Boot</description>
+	<properties>
+		<java.version>8</java.version>
+	</properties>
+	<dependencies>
+		dependency
+			groupIdorg.springframework.bootgroupId
+			artifactIdspring-boot-starter-data-jpaartifactId
+		dependency
+
+		dependency
+			groupIdorg.flywaydbgroupId
+			artifactIdflyway-coreartifactId
+		dependency
+		
+		dependency
+			groupIdorg.postgresqlgroupId
+			artifactIdpostgresqlartifactId
+		dependency
+
+		dependency
+			groupIdorg.springframework.bootgroupId
+			artifactIdspring-boot-starter-webartifactId
+		dependency
+
+		dependency
+			groupIdorg.springframework.bootgroupId
+			artifactIdspring-boot-devtoolsartifactId
+			scoperuntimescope
+			optionaltrueoptional
+		dependency
+		dependency
+			groupIdorg.projectlombokgroupId
+			artifactIdlombokartifactId
+			optionaltrueoptional
+		dependency
+		dependency
+			groupIdorg.springframework.bootgroupId
+			artifactIdspring-boot-starter-testartifactId
+			scopetestscope
+		dependency
+
+		dependency
+			groupIdio.springfoxgroupId
+			artifactIdspringfox-swagger2artifactId
+			version2.9.2version
+		dependency
+
+		dependency
+			groupIdio.springfoxgroupId
+			artifactIdspringfox-swagger-uiartifactId
+			version2.10.5version
+		dependency	
+		
+		dependency
+			groupIdorg.springframework.bootgroupId
+			artifactIdspring-boot-starter-validationartifactId
+		dependency	
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<excludes>
+						<exclude>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+						</exclude>
+					</excludes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+</project>
