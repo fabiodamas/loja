@@ -10,10 +10,20 @@ public class ProductDTO {
 	private String productIdentifier;
     @NotBlank
 	private String nome;
+    @NotBlank
+	private String descricao;	
     @NotNull
     private Float preco;
     @NotNull
 	private CategoryDTO category;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
 	public String getProductIdentifier() {
 		return productIdentifier;

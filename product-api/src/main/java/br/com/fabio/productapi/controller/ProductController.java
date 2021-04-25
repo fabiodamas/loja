@@ -41,8 +41,8 @@ public class ProductController {
 	}
 	
 	@PostMapping("/product")
-	ProductDTO newProduct(@Valid @RequestBody ProductDTO userDTO) {		
-	    return productService.save(userDTO);
+	ProductDTO newProduct(@Valid @RequestBody ProductDTO produtoDTO) {		
+	    return productService.save(produtoDTO);
 	}
 		
 	@DeleteMapping("/product/{id}")

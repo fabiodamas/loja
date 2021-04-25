@@ -17,7 +17,9 @@ public class DTOConverter {
 	public static ProductDTO convert(Product product) {
 		ProductDTO productDTO = new ProductDTO();
 		productDTO.setNome(product.getNome());
+		productDTO.setDescricao(product.getDescricao());
 		productDTO.setPreco(product.getPreco());
+		
 		productDTO.setProductIdentifier(product.getProductIdentifier());
 		if (product.getCategory() != null) {
 			productDTO.setCategory(DTOConverter.convert(product.getCategory()));

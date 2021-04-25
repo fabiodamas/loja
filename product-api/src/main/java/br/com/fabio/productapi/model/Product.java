@@ -23,10 +23,20 @@ public class Product {
 	private String nome;
 		
 	private Float preco;
+
+	private String descricao;
 	
 	@ManyToOne
 	@JoinColumn(name = "category_id")
 	private Category category;
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
 
 	public long getId() {
 		return id;
@@ -71,6 +81,7 @@ public class Product {
 	public static Product convert(ProductDTO productDTO) {
 		Product product = new Product();
 		product.setNome(productDTO.getNome());
+		product.setDescricao(productDTO.getDescricao());
 		product.setPreco(productDTO.getPreco());
 		product.setProductIdentifier(productDTO.getProductIdentifier());
 		if (productDTO.getCategory() != null) {
