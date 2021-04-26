@@ -17,59 +17,59 @@
 		<java.version>8</java.version>
 	</properties>
 	<dependencies>
-		dependency
-			groupIdorg.springframework.bootgroupId
-			artifactIdspring-boot-starter-data-jpaartifactId
-		dependency
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
 
-		dependency
-			groupIdorg.flywaydbgroupId
-			artifactIdflyway-coreartifactId
-		dependency
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-core</artifactId>
+		</dependency>
 		
-		dependency
-			groupIdorg.postgresqlgroupId
-			artifactIdpostgresqlartifactId
-		dependency
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+		</dependency>
 
-		dependency
-			groupIdorg.springframework.bootgroupId
-			artifactIdspring-boot-starter-webartifactId
-		dependency
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 
-		dependency
-			groupIdorg.springframework.bootgroupId
-			artifactIdspring-boot-devtoolsartifactId
-			scoperuntimescope
-			optionaltrueoptional
-		dependency
-		dependency
-			groupIdorg.projectlombokgroupId
-			artifactIdlombokartifactId
-			optionaltrueoptional
-		dependency
-		dependency
-			groupIdorg.springframework.bootgroupId
-			artifactIdspring-boot-starter-testartifactId
-			scopetestscope
-		dependency
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
-		dependency
-			groupIdio.springfoxgroupId
-			artifactIdspringfox-swagger2artifactId
-			version2.9.2version
-		dependency
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger2</artifactId>
+			<version>2.9.2</version>
+		</dependency>
 
-		dependency
-			groupIdio.springfoxgroupId
-			artifactIdspringfox-swagger-uiartifactId
-			version2.10.5version
-		dependency	
+		<dependency>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>2.10.5</version>
+		</dependency>	
 		
-		dependency
-			groupIdorg.springframework.bootgroupId
-			artifactIdspring-boot-starter-validationartifactId
-		dependency	
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>		
 	</dependencies>
 
 	<build>
